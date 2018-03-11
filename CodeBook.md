@@ -28,7 +28,7 @@ Since the data is available online I decided to download the zip file and unzip 
     - use subsetting with the lapply function to calculate the mean and summarize the data set and create a tidy summarize data
       `dataset2<-dataset[,lapply(.SD,mean),by=list(subject,activity)]`
     - Write the resulting data sets to two separate files:
-      > UCI-Tidy.csv - the data set of the all the mean and std observation only
+      > UCI-Tidy.csv - the data set of the all the mean and standard deviation observation only
       > UCI-Tidy-summarize.csv - Data set containing the average of each variable group by activity and subject
     
 ## Preparing the test data    
