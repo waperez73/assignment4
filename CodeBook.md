@@ -1,15 +1,15 @@
-#Getting and Cleaning Data Course Project
-##Coursera course 3
+# Getting and Cleaning Data Course Project
+## Coursera course 3
 
 Codebook for the training and test set derived from the UCI Human Activity Recgonition Using Smart Phone Data Set.  This is the list of variable extracted from the mean and std measurements from the training and test sets and merge into a single set.
 [original data can be found here link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 I used the features labels found in the features.txt file to create descriptive meaninfull variable names.
 
-#Loading, cleaning and data merging procedures
+# Loading, cleaning and data merging procedures
 Since the data is available online I decided to download the zip file and unzip it in the data sub-directory in the location od the main script (run_analysis.R).  The first step in the script is to check for the existance of the data folder.  If the data folder exist then I used the data files under the "UCI HAR Dataset" directory. 
 
-##Step by Step run_analysis.R
+## Step by Step run_analysis.R
     - Load the activity_labels.txt into a data.frame call activities_labels.  The data.frame contains two columns the code (1-5) and the activity name.
     - Load the features.txt into a data.frame.
     - Call the prepareTest(directory,rows) function in the script test.R
@@ -31,7 +31,7 @@ Since the data is available online I decided to download the zip file and unzip 
       > UCI-Tidy.csv - the data set of the all the mean and std observation only
       > UCI-Tidy-summarize.csv - Data set containing the average of each variable group by activity and subject
     
-##Preparing the test data    
+## Preparing the test data    
     1. Call the prepareTest(directory,rows) function in the script test.R
     2. Load the X_test.txt into a data.frame
     3. Load the subject_test.txt into a data.frame
@@ -44,7 +44,7 @@ Since the data is available online I decided to download the zip file and unzip 
     9. Return a data.table with the test data set
     
 
-##Preparing the training data    
+## Preparing the training data    
     1. Call the prepareTraining(directory,rows) function in the script training.R
     2. Load the X_train.txt into a data.frame
     3. Load the subject_train.txt into a data.frame - the test subject 
@@ -56,13 +56,13 @@ Since the data is available online I decided to download the zip file and unzip 
     8. Add another column with the subject ID (use cbind)
     9. Return a data.table with the training data set
     
-
-##Variable names
+ 
+## Variable names
 - Column 1 (subject): come from the files subject_train.txt and subject_test.txt.
 - Column 2 (activity): come from the files Y_train.txt and Y_test.txt to assign the label I created a data.frame from the activity_labels.txt file and used the number in the activity as index to the extract the labels.
 - Columns 3 to 88: Used the features.txt file to assign column names to the data.frame and used gsub to clean up the names. explained above
 
-###Variables
+### Variables
     1	  subject
     2	  activity
     3	  tBodyAcc-mean-X
