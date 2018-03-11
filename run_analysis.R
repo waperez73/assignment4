@@ -81,8 +81,8 @@ dataset2<-dataset[,lapply(.SD,mean),by=list(subject,activity)]
 
 dataset2<-arrange(dataset2,subject)
 
-uci_tidy<-file.path(data,"UCI-Tidy.csv")
-uci_tidy2<-file.path(data,"UCI-Tidy-summarize.csv")
+uci_tidy<-file.path(data,"UCI-Tidy.txt")
+uci_tidy2<-file.path(data,"UCI-Tidy-summarize.txt")
 
 message(sprintf("Saving the new tidy data sets: \n%s\n%s",uci_tidy,uci_tidy2))
 write.table(dataset,uci_tidy,row.names = FALSE)
