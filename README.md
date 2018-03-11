@@ -63,7 +63,36 @@ install.packages("data.table")
     To the run the script from RStudio or from the R Console you need to set the home_dir variable to the script location.
   
     ```home_dir<-"C:/projects/assignment4/"```
-    
+
+### script output
+
+      ```F:\Home\coursera\projects\assignment4>rscript run_analysis.R --path "F:\Home\coursera\projects\assignment4"
+      Initializing libraries
+      downloading data set from the UCI website.
+      trying URL 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
+      Content type 'application/zip' length 62556944 bytes (59.7 MB)
+      ==================================================
+      downloaded 59.7 MB
+      
+      Loading the activity labels files
+      Loading the features files
+      Processing the test data set.
+      Records processed: 2947
+      
+      Processing the training data set.
+      Records processed: 7352
+      
+      Merging the training and test data set
+      Records processed: 10299
+      
+      Making the variable.
+      sumarizes the data by subject and activity
+      Saving the new tidy data sets:
+      F:\Home\coursera\projects\assignment4/data/UCI-Tidy.csv
+      F:\Home\coursera\projects\assignment4/data/UCI-Tidy-summarize.csv
+      
+      Completed!```
+
 ## Contributing
 
 The original data and documentation can be found here
