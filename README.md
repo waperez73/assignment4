@@ -1,4 +1,5 @@
-# Getting and Cleaning Data Course Project - Coursera course 3
+#Getting and Cleaning Data Course Project
+##Coursera course 3
 
 The scripts can be used to create a two tidy data sets from the UCI Human Activity Recgonition Using Smart Phone Data Set.  The extracts the mean and std for all the measurements in the X_train.txt and X_test.txt.
 [original data can be found here link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
@@ -74,7 +75,7 @@ The original data and documentation can be found here
 
 ## Authors
 
-Wellintton Perez
+Wellintton Perez 2018
 
 ## License
 
@@ -84,3 +85,4 @@ Use it at you own risk this is code from a novice R programmer
 
 
 [original data can be found here link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+

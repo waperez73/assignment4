@@ -1,3 +1,6 @@
+#################################################################################################
+#Author: Wellintton Perez 2018
+#
 #This is function reads the data for the training data set and extract the mean and std variables
 #
 #Function: prepareTest(directory, rows)

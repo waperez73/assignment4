@@ -1,9 +1,14 @@
+#######################################################################################
+#Author: Wellintton Perez 2018
+
+#
 #This is function reads the data for the test data set and extract the mean and std variables
 #
 #Function: prepareTest(directory, rows)
 # directory: The data directory where the UCI data set is loaded
 # rows: the number of rows to process this is only used for debugging and testing.
 # Returns: this function returns a data.table
+#
 prepareTest<-function(directory, rows=-1){
   data<-read.table(file.path(directory,"X_test.txt",sep=""),nrows=rows, header=FALSE,stringsAsFactors = FALSE,colClasses = NA)
   

@@ -1,4 +1,5 @@
-#Getting and Cleaning Data Course Project - Coursera course 3
+#Getting and Cleaning Data Course Project
+##Coursera course 3
 
 Codebook for the training and test set derived from the UCI Human Activity Recgonition Using Smart Phone Data Set.  This is the list of variable extracted from the mean and std measurements from the training and test sets and merge into a single set.
 [original data can be found here link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).

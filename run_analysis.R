@@ -1,5 +1,8 @@
 #!/usr/bin/env Rscript
 
+#######################################################################################
+#Author: Wellintton Perez 2018
+
 #this script creates two tidy datasets from the UCI Human Activity Recognition dataset
 #http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
