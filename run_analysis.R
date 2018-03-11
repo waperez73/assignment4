@@ -85,7 +85,7 @@ uci_tidy<-file.path(data,"UCI-Tidy.csv")
 uci_tidy2<-file.path(data,"UCI-Tidy-summarize.csv")
 
 message(sprintf("Saving the new tidy data sets: \n%s\n%s",uci_tidy,uci_tidy2))
-write.csv(dataset,uci_tidy)
-write.csv(dataset2,uci_tidy2)
+write.table(dataset,uci_tidy,row.names = FALSE)
+write.table(dataset2,uci_tidy2,row.names = FALSE)
 
 message("\nCompleted!\n")
